@@ -63,6 +63,7 @@ fetch('https://api.example.com/users', {
 
 "Приклад обробки відповіді:"
 
+
 fetch('https://api.example.com/users')
   .then(response => response.json()) // перетворюємо відповідь у JSON
   .then(data => console.log(data))   // виводимо отримані дані
