@@ -8,10 +8,10 @@
 
 
 function createUser(user) {
-  return fetch("https://jsonplaceholder.typicode.com/users",{
-    method: 'POST',
-    headers:{
-      'Content-Type': 'application/json'
+  return fetch('https://jsonplaceholder.typicode.com/users',{
+    method:'POST',
+    headers: {
+      'Content-Type':'application/json'
     },
     body: JSON.stringify({
       name:user.name,
@@ -19,7 +19,6 @@ function createUser(user) {
     })
   })
   .then(response=>response.json())
-  .then(res=>console.log(res))
 }
 
 console.log(createUser({name: "Sam", email: "fjsnfkjns2342@gmail.com"}))
