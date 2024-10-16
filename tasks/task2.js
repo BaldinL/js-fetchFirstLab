@@ -19,7 +19,6 @@ function createUser(user) {
     })
   })
   .then(response=>response.json())
-  .then(data=>console.log(data))
 }
 
 console.log(createUser({name: "Sam", email: "fjsnfkjns2342@gmail.com"}))

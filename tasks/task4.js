@@ -5,17 +5,9 @@
 
 
 function deleteUser(id) {
-  fetch("https://jsonplaceholder.typicode.com/users",{
-    method: "DELETE",
-    headers:{
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      id: id
-    })
+  return fetch(`https://jsonplaceholder.typicode.com/users/${id}`,{
+    method: "DELETE"
   })
-    .then(response=>response.json())
-    return Response.json(status)
 }
 
 console.log(deleteUser(1));
